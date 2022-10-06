@@ -8,15 +8,19 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.rj.example</groupId>
-	<artifactId>supermarket</artifactId>
+	<groupId>mv.rj.senac</groupId>
+	<artifactId>gestao-funcionario</artifactId>
 	<version>1.0.0</version>
-	<name>Super Market</name>
-	<description>System that manages registration of a product</description>
-	<properties>
+	<name>gestao-market</name>
+	<description>Sistema que gerencia um mercado</description>
+	<properties> <!-- variaveis de ambiente -->
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -94,6 +98,11 @@
 			<version>1.6.11</version>
 		</dependency>
 		<!-- /# Swagger -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
 	</dependencies>
 
 	<build>
